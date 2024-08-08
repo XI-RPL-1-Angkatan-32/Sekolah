@@ -1,8 +1,7 @@
 <?php
-$koneksi = mysqli_connect("localhost", "root", "", "cafe");
-if($koneksi) {
-    echo "Database terhubung";
-} else {
-    echo "Database tidak terhubung";
+$koneksi = mysqli_connect("localhost", "root", "", "sekolah");
+if (mysqli_connect_errno()) {
+    printf("Connect failed: %s\n", mysqli_connect_error());
+    exit();
 }
 ?>
